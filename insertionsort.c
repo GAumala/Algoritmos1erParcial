@@ -7,7 +7,7 @@ void insertionsort(int list[]){
   int i, j;
   for (i = 1 ; i <= LISTSIZE - 1; i++) {
     j = i;
-    if(i % 100) printf("i: %d\n", (int)(i));
+    //if(i % 100) printf("i: %d\n", (int)(i));
 
     while ( j > 0 && list[j] < list[j-1]) {
       swap(&list[j], &list[j - 1]);
@@ -16,11 +16,7 @@ void insertionsort(int list[]){
   }
 }
 
-int main()
-{
-    initArrayFromFile(list);
-    insertionsort(list);
-    displayFirstAndLast(list);
-
-    return 0;
+int main( int argc, char *argv[]){
+   runAlgorithm(argc, argv, insertionsort);
+   return 0;
 }

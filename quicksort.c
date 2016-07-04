@@ -38,8 +38,7 @@ void quicksort(int list[]){
    _quicksort(list, 0, LISTSIZE - 1);
 }
 
-int main(){
-    initArrayFromFile(list);
-    quicksort(list);
-    displayFirstAndLast(list);
+int main( int argc, char *argv[]){
+   runAlgorithm(argc, argv, quicksort);
+   return 0;
 }

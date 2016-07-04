@@ -21,11 +21,7 @@ void countsort(int list[]){
       }
 }
 
-int main()
-{
-    initArrayFromFile(list);
-    countsort(list);
-    displayFirstAndLast(list);
-
-    return 0;
+int main( int argc, char *argv[]){
+   runAlgorithm(argc, argv, countsort);
+   return 0;
 }
