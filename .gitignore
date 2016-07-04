@@ -1,0 +1,7 @@
+*.gch
+*.txt
+*.o
+countsort
+quicksort
+insertionsort
+newlist

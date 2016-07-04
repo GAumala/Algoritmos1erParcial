@@ -1,8 +1,6 @@
-#include <stdio.h>
+#include "AlUtils.h"
 #include <time.h>
-#include <stdlib.h>
 
-#define LISTSIZE 10000000
 
 int main ()
 {
