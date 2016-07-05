@@ -1,7 +1,7 @@
 const spawn = require('child_process').spawn;
 //const executable = process.argv[2]
 let index = 0
-const tests = ["countsort", "quicksort", "insertionsort"]
+const tests = ["countsort", "quicksort", "insertionsort", "qsort"]
 
 function runTest(){
   const algorithmName = tests[index]

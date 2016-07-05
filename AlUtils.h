@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define LISTSIZE 10000000L
+#define LISTSIZE 100000L
 void runAlgorithm ( int argc, char *argv[], void (*f)(long[]) );
 
 void display(long array[]);

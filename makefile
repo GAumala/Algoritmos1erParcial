@@ -1,4 +1,4 @@
-all: newlist countsort quicksort insertionsort
+all: newlist countsort quicksort insertionsort qsort
 
 newlist: FileGenerator.c
 	gcc FileGenerator.c -o newlist -Wall
@@ -11,6 +11,9 @@ quicksort: AlUtils.o quicksort.c
 
 insertionsort: AlUtils.o insertionsort.c
 	gcc AlUtils.o insertionsort.c -o insertionsort -Wall
+
+qsort: AlUtils.o qsort.c
+	gcc AlUtils.o qsort.c -o qsort -Wall
 
 AlUtils.o: AlUtils.c
 	gcc -c AlUtils.c -o AlUtils.o
