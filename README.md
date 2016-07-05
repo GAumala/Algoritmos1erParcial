@@ -13,7 +13,7 @@ Los algoritmos comparados fueron:
    la libreria standard de C)
 
  Cada uno de estos algoritmos esta implementado en C. Hay un archivo .c para cada
- uno con su respectivo nomber. Para generar los ejecutables basta con ejecutar
+ uno con su respectivo nombre. Para generar los ejecutables basta con ejecutar
  `make` en este directorio.
 
 Los ejecutables generados son:
