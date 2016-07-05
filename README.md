@@ -53,3 +53,13 @@ Para guardar los resultados en un archivo `results.csv` puede ejecutar:
 ```
 node benchmark.js -s >> results.csv
 ```
+
+## Modificaciones
+
+Para ejecutar los tests con arreglos de tamaño diferente a 10 millones se puede
+modificar la constante `LISTSIZE` en el archivo `AlUtils.h`. despues de hacer
+`make clean`, `benchmark.js` realizará las pruebas con el nuevo tamaño.
+
+Para cambiar el numero de iteraciones necesarias para sacar el promedio. En el
+archivo `benchmark.js` se puede modificar manualmente la constante `iterations`
+que originalmente tiene un valor de 10.
