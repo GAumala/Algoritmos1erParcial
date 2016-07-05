@@ -2,10 +2,10 @@ const spawn = require('child_process').spawn;
 
 const silent = process.argv.length == 3 && process.argv[2] === "-s"
 const algoritmos = ["countsort", "quicksort", "qsort_gcc", "bitonicsort",
-"insertionsort", "shakersort"]
+  "insertionsort", "shakersort"]
 const results = []
 const tests = []
-const iterations = 3 //cuantas veces voy a iterar para calcular promedio
+const iterations = 10 //cuantas veces voy a iterar para calcular promedio
 
 let index = 0
 
