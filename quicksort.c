@@ -1,9 +1,13 @@
 #include "AlUtils.h"
+#include <time.h>
 
 long choose_pivot(long i,long j )
 {
-   return((i+j) /2);
+   long diff = j - i;
+   long pivot = (rand() % diff) + i;
+   return pivot;
 }
+
 void _quicksort(long list[],long m,long n)
 {
    long key,i,j,k;
@@ -37,6 +41,7 @@ void quicksort(long list[]){
 }
 
 int main( int argc, char *argv[]){
+   srand(time(NULL));
    runAlgorithm(argc, argv, quicksort);
    return 0;
 }
