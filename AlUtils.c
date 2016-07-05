@@ -1,24 +1,24 @@
 #include "AlUtils.h"
 
-int list[LISTSIZE];
+long list[LISTSIZE];
 
-void display(int array[])
+void display(long array[])
 {
     int i;
     for(i=0; i<LISTSIZE; i++)
-        printf("%d\n",array[i]);
+        printf("%ld\n",array[i]);
 }
 
 
-void displayFirstAndLast(int array[])
+void displayFirstAndLast(long array[])
 {
-    printf("first: %d\n",array[0]);
-    printf("mid: %d\n",array[LISTSIZE/2]);
-    printf("2nd last: %d\n",array[LISTSIZE - 2]);
-    printf("last: %d\n",array[LISTSIZE - 1]);
+    printf("first: %ld\n",array[0]);
+    printf("mid: %ld\n",array[LISTSIZE/2]);
+    printf("2nd last: %ld\n",array[LISTSIZE - 2]);
+    printf("last: %ld\n",array[LISTSIZE - 1]);
 }
 
-void swap(int *x,int *y)
+void swap(long *x,long *y)
 {
     int temp;
     temp = *x;
@@ -26,7 +26,7 @@ void swap(int *x,int *y)
     *y = temp;
 }
 
-void initArrayFromFile(int *array){
+void initArrayFromFile(long *array){
     FILE *fp;
 
     fp = fopen("nums.txt","r");
@@ -35,13 +35,13 @@ void initArrayFromFile(int *array){
      {
        char line [ 9 ]; /* or other suitable maximum line size */
        if ( fgets ( line, sizeof line, fp ) != NULL ) /* read a line */
-         array[i] = atoi(line);
+         array[i] = atol(line);
      }
      fclose(fp);
 }
 
 
-void runAlgorithm (  int argc, char *argv[], void (*f)(int[]) ){
+void runAlgorithm (  int argc, char *argv[], void (*f)(long[]) ){
    initArrayFromFile(list);
    (*f)(list);
    if(argc == 2){

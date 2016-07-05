@@ -1,11 +1,10 @@
 #include "AlUtils.h"
 
-int list[LISTSIZE];
-int countingList[LISTSIZE];
+long countingList[LISTSIZE];
 
 
-void countsort(int list[]){
-    int i;
+void countsort(long list[]){
+    long i;
     for(i = 0; i < LISTSIZE; i++)
       countingList[i] = 0;
 

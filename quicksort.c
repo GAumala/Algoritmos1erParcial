@@ -1,14 +1,12 @@
 #include "AlUtils.h"
 
-int list[LISTSIZE];
-
-int choose_pivot(int i,int j )
+long choose_pivot(long i,long j )
 {
    return((i+j) /2);
 }
-void _quicksort(int list[],int m,int n)
+void _quicksort(long list[],long m,long n)
 {
-   int key,i,j,k;
+   long key,i,j,k;
    if( m < n)
    {
        k = choose_pivot(m,n);
@@ -34,7 +32,7 @@ void _quicksort(int list[],int m,int n)
    }
 }
 
-void quicksort(int list[]){
+void quicksort(long list[]){
    _quicksort(list, 0, LISTSIZE - 1);
 }
 

@@ -5,15 +5,15 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define LISTSIZE 10000000
-void runAlgorithm ( int argc, char *argv[], void (*f)(int[]) );
+#define LISTSIZE 10000000L
+void runAlgorithm ( int argc, char *argv[], void (*f)(long[]) );
 
-void display(int array[]);
+void display(long array[]);
 
-void displayFirstAndLast(int array[]);
+void displayFirstAndLast(long array[]);
 
-void swap(int *x,int *y);
+void swap(long *x,long *y);
 
-void initArrayFromFile(int *array);
+void initArrayFromFile(long *array);
 
 #endif

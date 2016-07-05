@@ -12,12 +12,12 @@ int main ()
    /* Intializes random number generator */
    srand((unsigned) time(&t));
    char str[9];
-   int number = rand() % LISTSIZE + 1;
-   sprintf(str, "%d", number);
+   long number = rand() % LISTSIZE + 1;
+   sprintf(str, "%ld", number);
    fputs(str, fp);
    for(i = 1; i < LISTSIZE; i++ ){
-     int number = rand() % LISTSIZE + 1;
-     sprintf(str, "\n%d", number);
+     long number = rand() % LISTSIZE + 1;
+     sprintf(str, "\n%ld", number);
      fputs(str, fp);
    }
    fclose(fp);

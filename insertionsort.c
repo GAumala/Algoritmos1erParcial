@@ -1,10 +1,7 @@
 #include "AlUtils.h"
 
-int list[LISTSIZE];
-int countingList[LISTSIZE];
-
-void insertionsort(int list[]){
-  int i, j;
+void insertionsort(long list[]){
+  long i, j;
   for (i = 1 ; i <= LISTSIZE - 1; i++) {
     j = i;
     //if(i % 100) printf("i: %d\n", (int)(i));
